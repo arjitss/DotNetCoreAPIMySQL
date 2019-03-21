@@ -10,18 +10,22 @@ namespace SamplWebApp.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        string[] days = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return days;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            if(id > -1 && id < days.Count())
+                return days[id];
+            else
+                return NotFound("<h1>Invalid Entry..!!</h1>");
         }
 
         // POST api/values
