@@ -29,7 +29,7 @@ namespace SamplWebApp
         {
             services.AddCors();
 
-            services.AddDbContext<DaysContext>(opts => opts.UseMySql(Configuration["ConnectionString:DefaultConnection"]));
+            services.AddDbContext<DaysContext>(opts => opts.UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
