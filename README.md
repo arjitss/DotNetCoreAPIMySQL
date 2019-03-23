@@ -1,4 +1,4 @@
-# SamplWebApp - .Net Core with MySQL
+# DotNetCoreAPIMySQL - A .Net Core API only application with MySQL
 
 A very basic .NetCore application using MySQL as database with two controllers:
 
