@@ -19,8 +19,7 @@ Wednesday
 https://localhost:5001/api/values <br>
 The result is:- <br>
 [{"id":1,"dayName":"Sunday"},{"id":2,"dayName":"Monday"},{"id":3,"dayName":"Tuesday"},{"id":4,"dayName":"Wednesday"},{"id":5,"dayName":"Thursday"},{"id":6,"dayName":"Friday"},{"id":7,"dayName":"Saturday"}]
-
-<br><br>
+<br>
 
 https://localhost:5001/api/values/3 <br>
 The result is:-<br>
